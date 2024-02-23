@@ -15,7 +15,7 @@ import { of } from 'rxjs';
 export class AppComponent {
   title = 'Assignmentt-6';
   numbers$:any=of(1,2,3);
-  apiUrl='https://randomuser.me/api/';
+  apiUrl='https://randomuser.me/api/?results=5';
   userData:any=null;
   error:string='';
   btnDemonstrate: any;

@@ -1,2 +1,12 @@
+
+<div>
+  <h2>Users Retrieved</h2>
+  <div *ngIf="userData">
+    <p>Name: {{ userData.name.title }} {{ userData.name.first }} {{ userData.name.last }}</p>
+    <img [src]="userData.picture.large" alt="user photo">
+    <p>Email: {{ userData.email }}</p>
+    <p>Phone: {{ userData.phone }}</p>
+  </div>
+</div>
 <app-userform></app-userform>
-<br><button (click)="fetchUser()">Retrieve User</button>
+<button (click)="fetchUser()">Retrieve User</button>
